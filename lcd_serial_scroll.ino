@@ -16,7 +16,6 @@ int scrollCursor = screenWidth;
 void setup() {
   Serial.begin(115200);
   lcd.begin(16,2);
-  lcd.backlight();
 }
 
 void loop() {
