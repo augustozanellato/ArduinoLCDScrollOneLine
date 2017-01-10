@@ -27,11 +27,12 @@ void loop() {
     scrollCursor = 16;
     lcd.setCursor(16, 0);
   }
+  lcd.setCursor(0, 0);
+  lcd.print("                ");
   lcd.setCursor(scrollCursor, 0);
   lcd.print(line1.substring(stringStart,stringStop));
   lcd.setCursor(0, 1);
   lcd.print(line2);
-  lcd.clear();
   if(stringStart == 0 && scrollCursor > 0){
     scrollCursor--;
     stringStop++;
@@ -48,5 +49,6 @@ void loop() {
     stringStart++;
     stringStop++;
   } 
+  delay(400);
 }
 
