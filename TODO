@@ -1,0 +1,1 @@
+- Move all the display stuff inside a function update() and call it in loop()
